@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.fluffypeople.managesieve'
+version = '0.0.2'
+
+description = """ManageSieveJ - Manage Sieve protocol library"""
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.2'
+}
