@@ -49,10 +49,10 @@ import javax.net.ssl.X509TrustManager;
  */
 public class ConnectAndListScripts {
 
-    private static final String SERVER_NAME = "mail.example.com";
+    private static final String SERVER_NAME = "localhost";
     private static final int SERVER_PORT = 4190;
-    private static final String USERNAME = "example";
-    private static final String PASSWORD = "example1";
+    private static final String USERNAME = "adrian@client1.example.com*dmaster";
+    private static final String PASSWORD = "MageyPoo";
 
     /**
      * @param args the command line arguments
@@ -77,10 +77,10 @@ public class ConnectAndListScripts {
             // resp = client.starttls();
 
 
-            resp = client.starttls(getInsecureSSLFactory(), false);
-            if (!resp.isOk()) {
-                throw new IOException("Can't start SSL:" + resp.getMessage());
-            }
+            //resp = client.starttls(getInsecureSSLFactory(), false);
+            //if (!resp.isOk()) {
+            //    throw new IOException("Can't start SSL:" + resp.getMessage());
+            //}
 
             // Authenticate the easy way. If your server does something complicated,
             // look at the other version of authenticate.

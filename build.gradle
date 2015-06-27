@@ -15,5 +15,6 @@ repositories {
 
 dependencies {
     compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
-    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.2'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.10'
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.10'
 }
